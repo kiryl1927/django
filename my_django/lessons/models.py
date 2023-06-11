@@ -25,6 +25,7 @@ class Model2(models.Model):
 class Model3(models.Model):
     pole1 = models.IntegerField()
     pole2 = models.CharField(max_length=200)
+    pole3 = models.ForeignKey(Model2,models.CASCADE)
 
     class Meta:
         verbose_name = 'Модель'
